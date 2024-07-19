@@ -7,24 +7,23 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #614a4a;
+    background-color: #000;
 }
 
 .gallery {
     position: relative;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    border: 1px solid #ccc;
-    border-radius: 5px;
 }
 
 .gallery img {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: auto;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -33,9 +32,17 @@ body {
     opacity: 1;
 }
 
-button {
+.nav-btn {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #ddd;
 }
