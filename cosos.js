@@ -1,7 +1,7 @@
 // script.js
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.gallery img');
-const totalImages = images.length;
+const totalImages = (images.length)-1;
 
 document.getElementById('nextBtn').addEventListener('click', () => {
     images[currentImageIndex].classList.remove('active');
